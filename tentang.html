@@ -20,44 +20,10 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <style>
         html { scroll-behavior: smooth; }
-        html.dark { color-scheme: dark; }
-        html.dark body { background: #191c1e; color: #e3e2e6; }
-        html.dark .bg-background { background-color: #191c1e; }
-        html.dark .bg-surface { background-color: #191c1e; }
-        html.dark .bg-surface-container-lowest { background-color: #1f2122; }
-        html.dark .bg-surface-container-low { background-color: #242627; }
-        html.dark .bg-surface-container { background-color: #2e3031; }
-        html.dark .bg-surface-container-high { background-color: #393b3c; }
-        html.dark .bg-surface-container-highest { background-color: #444749; }
-        html.dark .bg-primary-fixed { background-color: #004c6e; }
-        html.dark .bg-secondary-fixed { background-color: #004d66; }
-        html.dark .bg-tertiary-fixed { background-color: #384953; }
-        html.dark .bg-error-container { background-color: #8c1d18; }
-        html.dark .text-on-background { color: #e3e2e6; }
-        html.dark .text-on-surface { color: #e3e2e6; }
-        html.dark .text-on-surface-variant { color: #c4c7cf; }
-        html.dark .text-on-primary-fixed { color: #c9e6ff; }
-        html.dark .text-on-secondary-fixed { color: #c0e8ff; }
-        html.dark .text-on-tertiary-container { color: #d3e5f1; }
-        html.dark .text-on-error-container { color: #ffb4ab; }
-        html.dark .text-primary { color: #89ceff; }
-        html.dark .text-secondary { color: #7bd1fa; }
-        html.dark .text-tertiary { color: #b7c9d5; }
-        html.dark .border-outline-variant { border-color: #444749; }
-        html.dark .border-surface-variant { border-color: #444749; }
-        html.dark .glass-panel { background: rgba(25, 28, 30, 0.8); border: 1px solid rgba(255,255,255,0.08); }
-        html.dark header { background: rgba(25, 28, 30, 0.85) !important; border-bottom: 1px solid rgba(255,255,255,0.06) !important; }
-        html.dark footer { background: #242627; }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-        }
         .soft-shadow {
             box-shadow: 0 10px 20px rgba(0, 30, 47, 0.05);
         }
@@ -79,31 +45,32 @@
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
     <!-- Top Navigation Bar -->
-    <header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-white/40 shadow-sm transition-all duration-300">
-        <div class="flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max mx-auto">
+    <header class="fixed top-0 w-full z-50 bg-surface-container shadow-sm">
+        <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 max-w-container-max mx-auto">
             <a href="index.html" class="font-headline-sm text-headline-sm font-bold text-primary group flex items-center gap-2">
                 <span class="material-symbols-outlined text-primary group-hover:rotate-12 transition-transform duration-300">code_blocks</span>
                 Razy Al Farizy
             </a>
-            <nav class="hidden md:flex items-center gap-stack-lg">
-                <a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="index.html"><span data-id="nav_beranda" data-en="nav_home">Beranda</span></a>
-                <a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="proyek.html"><span data-id="nav_proyek" data-en="nav_projects">Proyek</span></a>
-                <a class="text-primary font-bold border-b-2 border-primary font-label-md text-label-md pb-1" href="tentang.html"><span data-id="nav_tentang" data-en="nav_about">Tentang</span></a>
-                <a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="kontak.html"><span data-id="nav_kontak" data-en="nav_contact">Kontak</span></a>
+            <nav class="hidden md:flex items-center gap-gutter">
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="index.html"><span data-id="nav_beranda" data-en="nav_home">Beranda</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="proyek.html"><span data-id="nav_proyek" data-en="nav_projects">Proyek</span></a>
+                <a class="text-primary font-bold border-b-2 border-primary pb-1" href="tentang.html"><span data-id="nav_tentang" data-en="nav_about">Tentang</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="kontak.html"><span data-id="nav_kontak" data-en="nav_contact">Kontak</span></a>
             </nav>
-            <div class="hidden md:flex items-center gap-2">
-                <button id="langToggle" class="p-2 rounded-lg hover:bg-surface-variant transition-colors duration-200 text-on-surface border border-outline-variant" title="Toggle Language">
-                    <span id="langIcon" class="text-sm font-bold font-label-md">ID</span>
+            <div class="hidden md:flex items-center gap-4">
+                <button id="langToggle" class="text-on-surface-variant hover:text-primary transition-colors duration-200 flex items-center gap-1 p-2" title="Toggle Language">
+                    <span class="material-symbols-outlined text-[20px]">translate</span>
+                    <span id="langIcon" class="font-label-caps text-label-caps">ID/EN</span>
                 </button>
-                <button id="themeToggle" class="p-2 rounded-lg hover:bg-surface-variant transition-colors duration-200 text-on-surface border border-outline-variant" title="Toggle Theme">
-                    <span class="material-symbols-outlined text-[22px] font-bold">dark_mode</span>
+                <button id="themeToggle" class="text-on-surface-variant hover:text-primary transition-colors duration-200 p-2" title="Toggle Theme">
+                    <span class="material-symbols-outlined text-[20px]">dark_mode</span>
                 </button>
-                <a href="kontak.html" class="bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full hover:bg-surface-tint hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 items-center gap-2 inline-flex">
+                <a href="kontak.html" class="bg-primary text-on-primary font-label-caps text-label-caps px-6 py-2.5 rounded-full hover:bg-surface-tint hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 items-center gap-2 inline-flex">
                     <span class="material-symbols-outlined text-[18px]">download</span>
                     Resume
                 </a>
             </div>
-            <button id="menuToggle" class="md:hidden text-primary p-2 rounded-lg hover:bg-primary/5 transition-colors">
+            <button id="menuToggle" class="md:hidden text-primary p-2">
                 <span class="material-symbols-outlined">menu</span>
             </button>
         </div>
@@ -113,7 +80,7 @@
     <div id="mobileMenu" class="mobile-menu fixed inset-0 z-50 bg-surface md:hidden">
         <div class="flex justify-between items-center px-margin-mobile py-4 border-b border-surface-variant">
             <a href="index.html" class="font-headline-sm text-headline-sm font-bold text-primary">Razy Al Farizy</a>
-            <button id="menuClose" class="text-primary">
+            <button id="menuClose" class="text-primary p-2">
                 <span class="material-symbols-outlined">close</span>
             </button>
         </div>
@@ -123,11 +90,12 @@
             <a class="text-primary font-bold border-l-4 border-primary py-2 pl-4" href="tentang.html"><span data-id="nav_tentang" data-en="nav_about">Tentang</span></a>
             <a class="text-on-surface-variant hover:text-primary transition-colors py-2 pl-4" href="kontak.html"><span data-id="nav_kontak" data-en="nav_contact">Kontak</span></a>
             <div class="flex items-center gap-4 mt-4 pl-4">
-                <button id="langToggleMobile" class="p-2 rounded-lg hover:bg-surface-variant transition-colors duration-200 text-on-surface border border-outline-variant">
-                    <span class="text-sm font-bold font-label-md">ID</span>
+                <button id="langToggleMobile" class="text-on-surface-variant hover:text-primary transition-colors duration-200 flex items-center gap-1 p-2">
+                    <span class="material-symbols-outlined text-[20px]">translate</span>
+                    <span class="font-label-caps text-label-caps">ID/EN</span>
                 </button>
-                <button id="themeToggleMobile" class="p-2 rounded-lg hover:bg-surface-variant transition-colors duration-200 text-on-surface border border-outline-variant">
-                    <span class="material-symbols-outlined text-[22px] font-bold">dark_mode</span>
+                <button id="themeToggleMobile" class="text-on-surface-variant hover:text-primary transition-colors duration-200 p-2">
+                    <span class="material-symbols-outlined text-[20px]">dark_mode</span>
                 </button>
             </div>
         </div>
@@ -225,25 +193,19 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-surface-container-low w-full py-section-gap-mobile md:py-section-gap-desktop mt-auto border-t border-outline-variant/20">
-        <div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto gap-stack-md">
-            <div class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+    <footer class="bg-surface-container-low w-full py-8 mt-auto border-t border-outline-variant/30">
+        <div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-4">
+            <div class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-2">
                 <span class="material-symbols-outlined">code_blocks</span>
                 Razy Al Farizy
             </div>
             <div class="flex gap-6">
-                <a class="text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-transform duration-300 font-label-md text-label-md flex items-center gap-1 opacity-80 hover:opacity-100" href="#">
-                    <span class="material-symbols-outlined text-[20px]">link</span> LinkedIn
-                </a>
-                <a class="text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-transform duration-300 font-label-md text-label-md flex items-center gap-1 opacity-80 hover:opacity-100" href="https://github.com/Zhee1112" target="_blank">
-                    <span class="material-symbols-outlined text-[20px]">code</span> GitHub
-                </a>
-                <a class="text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-transform duration-300 font-label-md text-label-md flex items-center gap-1 opacity-80 hover:opacity-100" href="mailto:razialfarizi0@gmail.com">
-                    <span class="material-symbols-outlined text-[20px]">mail</span> Email
-                </a>
+                <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary underline transition-all hover:opacity-80" href="#">LinkedIn</a>
+                <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary underline transition-all hover:opacity-80" href="https://github.com/Zhee1112" target="_blank">GitHub</a>
+                <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary underline transition-all hover:opacity-80" href="mailto:razialfarizi0@gmail.com">Email</a>
             </div>
-            <div class="text-secondary font-label-md text-label-md opacity-70 text-center md:text-right mt-4 md:mt-0 max-w-xs">
-                © 2024 Razy Al Farizy. Dibuat dengan dedikasi pada Keamanan & Inovasi.
+            <div class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-right">
+                © 2024 Razy Al Farizy. Built with precision.
             </div>
         </div>
     </footer>
