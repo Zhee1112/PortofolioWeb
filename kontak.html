@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Hubungi Saya - Razy Al Farizy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#001e2f",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "primary-container": "#0ea5e9",
+                    "primary-fixed": "#c9e6ff",
+                    "surface-tint": "#006591",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#eceef0",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "on-background": "#191c1e",
+                    "on-secondary-fixed": "#001e2b",
+                    "surface-container-low": "#f2f4f6",
+                    "surface": "#f7f9fb",
+                    "surface-bright": "#f7f9fb",
+                    "on-surface-variant": "#3e4850",
+                    "on-secondary-container": "#005b78",
+                    "inverse-on-surface": "#eff1f3",
+                    "secondary-fixed": "#c0e8ff",
+                    "secondary-container": "#7ed4fd",
+                    "background": "#f7f9fb",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#bec8d2",
+                    "primary-fixed-dim": "#89ceff",
+                    "inverse-primary": "#89ceff",
+                    "error": "#ba1a1a",
+                    "tertiary": "#50616b",
+                    "surface-dim": "#d8dadc",
+                    "tertiary-fixed": "#d3e5f1",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#003751",
+                    "on-surface": "#191c1e",
+                    "on-tertiary-fixed-variant": "#384953",
+                    "primary": "#006591",
+                    "on-secondary-fixed-variant": "#004d66",
+                    "surface-variant": "#e0e3e5",
+                    "secondary-fixed-dim": "#7bd1fa",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#2d3133",
+                    "on-tertiary-fixed": "#0c1e26",
+                    "outline": "#6e7881",
+                    "tertiary-fixed-dim": "#b7c9d5",
+                    "on-primary": "#ffffff",
+                    "secondary": "#006686",
+                    "on-primary-fixed-variant": "#004c6e",
+                    "on-tertiary-container": "#25353e",
+                    "tertiary-container": "#8c9ea9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap-mobile": "64px",
+                    "section-gap-desktop": "120px",
+                    "stack-sm": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "container-max": "1280px",
+                    "stack-lg": "24px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+    }
+        },
+      }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col pt-[80px]">
+    <!-- TopNavBar Desktop -->
+    <nav class="bg-surface/70 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/40 shadow-sm hidden md:block">
+        <div class="flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max mx-auto">
+            <a href="index.html" class="font-headline-sm text-headline-sm font-bold text-primary">Razy Al Farizy</a>
+            <div class="flex gap-8 items-center">
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="index.html">Beranda</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="proyek.html">Proyek</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="tentang.html">Tentang</a>
+                <a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="kontak.html">Kontak</a>
+            </div>
+            <a href="kontak.html" class="bg-primary text-on-primary px-6 py-2 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-colors duration-200">Resume</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Header -->
+    <nav class="bg-surface/70 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/40 shadow-sm md:hidden flex justify-between items-center px-margin-mobile py-4">
+        <a href="index.html" class="font-headline-sm text-headline-sm font-bold text-primary">Razy Al Farizy</a>
+        <button id="menuToggle" class="text-primary p-2">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-0 z-50 bg-surface md:hidden">
+        <div class="flex justify-between items-center px-margin-mobile py-4 border-b border-surface-variant">
+            <a href="index.html" class="font-headline-sm text-headline-sm font-bold text-primary">Razy Al Farizy</a>
+            <button id="menuClose" class="text-primary">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <div class="flex flex-col gap-4 px-margin-mobile pt-8">
+            <a class="text-on-surface-variant hover:text-primary transition-colors py-2 pl-4" href="index.html">Beranda</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors py-2 pl-4" href="proyek.html">Proyek</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors py-2 pl-4" href="tentang.html">Tentang</a>
+            <a class="text-primary font-bold border-l-4 border-primary py-2 pl-4" href="kontak.html">Kontak</a>
+        </div>
+    </div>
+
+    <!-- Main Canvas -->
+    <main class="flex-grow flex flex-col justify-center py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-lg lg:gap-12 items-start">
+            <!-- Left Column: Intro & Socials -->
+            <div class="lg:col-span-5 flex flex-col gap-stack-md lg:pr-8">
+                <h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-2">
+                    Hubungi Saya
+                </h1>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    Mari diskusikan ide inovatif atau kolaborasi keamanan siber Anda. Saya siap membantu mewujudkan solusi digital yang aman dan modern.
+                </p>
+                <!-- Social Links Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                    <a class="flex items-center gap-3 p-4 bg-surface-container-lowest border border-outline-variant rounded-[24px] shadow-[0_4px_20px_rgba(0,30,43,0.03)] hover:-translate-y-1 hover:shadow-md transition-all duration-300 group" href="#">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                            <span class="material-symbols-outlined">link</span>
+                        </div>
+                        <span class="font-label-md text-label-md text-on-surface">LinkedIn</span>
+                    </a>
+                    <a class="flex items-center gap-3 p-4 bg-surface-container-lowest border border-outline-variant rounded-[24px] shadow-[0_4px_20px_rgba(0,30,43,0.03)] hover:-translate-y-1 hover:shadow-md transition-all duration-300 group" href="#">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                            <span class="material-symbols-outlined">code</span>
+                        </div>
+                        <span class="font-label-md text-label-md text-on-surface">GitHub</span>
+                    </a>
+                    <a class="flex items-center gap-3 p-4 bg-surface-container-lowest border border-outline-variant rounded-[24px] shadow-[0_4px_20px_rgba(0,30,43,0.03)] hover:-translate-y-1 hover:shadow-md transition-all duration-300 group sm:col-span-2" href="#">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <span class="font-label-md text-label-md text-on-surface">hello@razyalfarizy.com</span>
+                    </a>
+                </div>
+                <!-- Decorative Image -->
+                <div class="mt-8 rounded-[32px] overflow-hidden shadow-sm border border-outline-variant/30 h-48 relative">
+                    <img class="w-full h-full object-cover" alt="Communication network illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyvki42NVmuV289z5MqRq9ACpTKehbwowRdS4LpRzR3EYnNI6qk4rnspY3NwmAI4xaA8uUhqVnuYTf2clyfTDECo6Tyy4loFPFjIRGfu6nEM7uKwsoIsVgVMGxV3VZhqeyVWt15qAUqUVfC-mfScAeapBORZQY8CQ5YRQIzcAByvY1XHLA7QqbFU5Ly8YJ3ijULJpBI7erWHGXD677q6sRUcyUyA90vushWVD-hxryhqqIUSpy_I2a"/>
+                </div>
+            </div>
+            <!-- Right Column: Contact Form -->
+            <div class="lg:col-span-7">
+                <div class="bg-surface-container-lowest rounded-[32px] p-8 md:p-10 shadow-[0_8px_30px_rgba(0,30,43,0.04)] border border-primary-fixed-dim/50 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-secondary-container/20 rounded-full blur-[80px] -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+                    <form class="flex flex-col gap-6 z-10 relative">
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label-md text-label-md text-on-surface-variant ml-1" for="nama">Nama</label>
+                            <input class="w-full rounded-[16px] border border-primary-fixed-dim bg-surface px-5 py-4 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all duration-300" id="nama" name="nama" placeholder="Masukkan nama Anda" type="text"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label-md text-label-md text-on-surface-variant ml-1" for="email">Email</label>
+                            <input class="w-full rounded-[16px] border border-primary-fixed-dim bg-surface px-5 py-4 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all duration-300" id="email" name="email" placeholder="alamat@email.com" type="email"/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label-md text-label-md text-on-surface-variant ml-1" for="pesan">Pesan</label>
+                            <textarea class="w-full rounded-[24px] border border-primary-fixed-dim bg-surface px-5 py-4 font-body-md text-body-md text-on-surface placeholder:text-outline focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all duration-300 resize-none" id="pesan" name="pesan" placeholder="Tuliskan pesan atau ide Anda di sini..." rows="5"></textarea>
+                        </div>
+                        <button class="mt-4 bg-primary text-on-primary rounded-[16px] px-8 py-4 font-label-md text-label-md hover:bg-surface-tint transition-colors duration-300 shadow-sm flex items-center justify-center gap-2 group w-full md:w-auto self-start" type="submit">
+                            <span>Kirim Pesan</span>
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-low w-full py-section-gap-mobile md:py-section-gap-desktop mt-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto gap-stack-md">
+            <div class="font-headline-sm text-headline-sm text-primary">Razy Al Farizy</div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a class="font-label-md text-label-md text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-all duration-300 opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+                <a class="font-label-md text-label-md text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-all duration-300 opacity-80 hover:opacity-100" href="#">GitHub</a>
+                <a class="font-label-md text-label-md text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-all duration-300 opacity-80 hover:opacity-100" href="#">Twitter</a>
+                <a class="font-label-md text-label-md text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-all duration-300 opacity-80 hover:opacity-100" href="kontak.html">Email</a>
+            </div>
+            <div class="font-body-md text-body-md text-secondary text-center md:text-right text-sm">
+                &copy; 2024 Razy Al Farizy. Dibuat dengan dedikasi pada Keamanan &amp; Inovasi.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menuClose = document.getElementById('menuClose');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Tentang Saya - Razy Al Farizy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#001e2f",
+                      "on-secondary": "#ffffff",
+                      "surface-container-highest": "#e0e3e5",
+                      "primary-container": "#0ea5e9",
+                      "primary-fixed": "#c9e6ff",
+                      "surface-tint": "#006591",
+                      "error-container": "#ffdad6",
+                      "surface-container": "#eceef0",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-high": "#e6e8ea",
+                      "on-background": "#191c1e",
+                      "on-secondary-fixed": "#001e2b",
+                      "surface-container-low": "#f2f4f6",
+                      "surface": "#f7f9fb",
+                      "surface-bright": "#f7f9fb",
+                      "on-surface-variant": "#3e4850",
+                      "on-secondary-container": "#005b78",
+                      "inverse-on-surface": "#eff1f3",
+                      "secondary-fixed": "#c0e8ff",
+                      "secondary-container": "#7ed4fd",
+                      "background": "#f7f9fb",
+                      "on-tertiary": "#ffffff",
+                      "outline-variant": "#bec8d2",
+                      "primary-fixed-dim": "#89ceff",
+                      "inverse-primary": "#89ceff",
+                      "error": "#ba1a1a",
+                      "tertiary": "#50616b",
+                      "surface-dim": "#d8dadc",
+                      "tertiary-fixed": "#d3e5f1",
+                      "on-error": "#ffffff",
+                      "on-primary-container": "#003751",
+                      "on-surface": "#191c1e",
+                      "on-tertiary-fixed-variant": "#384953",
+                      "primary": "#006591",
+                      "on-secondary-fixed-variant": "#004d66",
+                      "surface-variant": "#e0e3e5",
+                      "secondary-fixed-dim": "#7bd1fa",
+                      "on-error-container": "#93000a",
+                      "inverse-surface": "#2d3133",
+                      "on-tertiary-fixed": "#0c1e26",
+                      "outline": "#6e7881",
+                      "tertiary-fixed-dim": "#b7c9d5",
+                      "on-primary": "#ffffff",
+                      "secondary": "#006686",
+                      "on-primary-fixed-variant": "#004c6e",
+                      "on-tertiary-container": "#25353e",
+                      "tertiary-container": "#8c9ea9"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px",
+                      "2xl": "1.5rem"
+              },
+              "spacing": {
+                      "section-gap-mobile": "64px",
+                      "section-gap-desktop": "120px",
+                      "stack-sm": "8px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "stack-md": "16px",
+                      "container-max": "1280px",
+                      "stack-lg": "24px"
+              },
+              "fontFamily": {
+                      "label-md": ["Inter"],
+                      "display-lg-mobile": ["Plus Jakarta Sans"],
+                      "display-lg": ["Plus Jakarta Sans"],
+                      "headline-md": ["Plus Jakarta Sans"],
+                      "headline-sm": ["Plus Jakarta Sans"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                      "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                      "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 20px rgba(0, 30, 47, 0.05);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(0, 30, 47, 0.08);
+        }
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container">
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-white/40 shadow-sm transition-all duration-300">
+        <div class="flex justify-between items-center px-margin-mobile md:px-gutter py-4 max-w-container-max mx-auto">
+            <a href="index.html" class="font-headline-sm text-headline-sm font-bold text-primary group flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary group-hover:rotate-12 transition-transform duration-300">code_blocks</span>
+                Razy Al Farizy
+            </a>
+            <nav class="hidden md:flex items-center gap-stack-lg">
+                <a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="index.html">Beranda</a>
+                <a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="proyek.html">Proyek</a>
+                <a class="text-primary font-bold border-b-2 border-primary font-label-md text-label-md pb-1" href="tentang.html">Tentang</a>
+                <a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors duration-200" href="kontak.html">Kontak</a>
+            </nav>
+            <a href="kontak.html" class="hidden md:inline-flex bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full hover:bg-surface-tint hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">download</span>
+                Resume
+            </a>
+            <button id="menuToggle" class="md:hidden text-primary p-2 rounded-lg hover:bg-primary/5 transition-colors">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-0 z-50 bg-surface md:hidden">
+        <div class="flex justify-between items-center px-margin-mobile py-4 border-b border-surface-variant">
+            <a href="index.html" class="font-headline-sm text-headline-sm font-bold text-primary">Razy Al Farizy</a>
+            <button id="menuClose" class="text-primary">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <div class="flex flex-col gap-4 px-margin-mobile pt-8">
+            <a class="text-on-surface-variant hover:text-primary transition-colors py-2 pl-4" href="index.html">Beranda</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors py-2 pl-4" href="proyek.html">Proyek</a>
+            <a class="text-primary font-bold border-l-4 border-primary py-2 pl-4" href="tentang.html">Tentang</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors py-2 pl-4" href="kontak.html">Kontak</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-section-gap-mobile md:pt-section-gap-desktop pb-section-gap-mobile md:pb-section-gap-desktop px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+        <!-- Hero Section -->
+        <section class="mb-section-gap-mobile md:mb-section-gap-desktop">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-stack-lg">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md">
+                        <span class="material-symbols-outlined text-[16px]">verified_user</span>
+                        <span>Full Stack Developer & Cybersecurity Specialist</span>
+                    </div>
+                    <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">
+                        Membangun Aplikasi Web yang <span class="text-primary relative inline-block">Aman<svg class="absolute w-full h-3 -bottom-1 left-0 text-secondary-container opacity-50" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0,5 Q50,10 100,5" fill="none" stroke="currentColor" stroke-width="4"></path></svg></span> & Inovatif
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                        Halo, saya Razy. Saya memiliki hasrat mendalam dalam merancang sistem yang tidak hanya berfungsi dengan indah, tetapi juga kokoh terhadap ancaman modern. Pendekatan saya menggabungkan arsitektur perangkat lunak yang bersih dengan prinsip-prinsip keamanan sejak tahap desain (Security by Design).
+                    </p>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-primary-container/20 to-secondary-container/20 rounded-2xl transform rotate-3 scale-105"></div>
+                    <div class="relative bg-surface-container-lowest rounded-2xl p-2 soft-shadow border border-outline-variant/30 overflow-hidden">
+                        <img alt="Razy Al Farizy Portrait" class="w-full h-auto aspect-square object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA7IpyoiCtl0faMdepaZcPANNdeVzq5uLLNPcTU6qLvpeZ3XTaE1D1uBhKhPxHZOMr005ARSLoVbUffMpeViSk0Cl3txADE8wQyI1xutUYWmvoyOV5qhFhcdVPSVQ8LT-OluROwBBpAGpQ3X_QBUkIukQLehGA3Es3n4ctMVLjOP3XzP8GTxNGORa0Ku9qWQB_tPDKlk1kFdLratWyigob-0vJcRELkyPPRiF9lGr2sERFunBi8B89"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Skills Section -->
+        <section class="mb-section-gap-mobile md:mb-section-gap-desktop">
+            <div class="flex items-center gap-4 mb-stack-lg">
+                <h2 class="font-headline-md text-headline-md text-on-surface">Keahlian Inti</h2>
+                <div class="h-px bg-outline-variant flex-grow opacity-50"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Frontend/UI Card -->
+                <div class="bg-surface-container-lowest rounded-2xl p-6 soft-shadow border border-outline-variant/20 hover-lift flex flex-col h-full">
+                    <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-4">
+                        <span class="material-symbols-outlined">devices</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Frontend & UI/UX</h3>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-[12px]">JavaScript (ES6+)</span>
+                        <span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-[12px]">React.js</span>
+                        <span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-[12px]">Tailwind CSS</span>
+                        <span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-[12px]">Figma</span>
+                    </div>
+                </div>
+                <!-- Backend/Systems Card -->
+                <div class="bg-surface-container-lowest rounded-2xl p-6 soft-shadow border border-outline-variant/20 hover-lift flex flex-col h-full">
+                    <div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed mb-4">
+                        <span class="material-symbols-outlined">dns</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Backend & Systems</h3>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-[12px]">Node.js</span>
+                        <span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-[12px]">Python</span>
+                        <span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-[12px]">PostgreSQL</span>
+                        <span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-[12px]">Docker</span>
+                    </div>
+                </div>
+                <!-- Cybersecurity Card (Highlighted) -->
+                <div class="bg-primary text-on-primary rounded-2xl p-6 soft-shadow hover-lift flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+                    <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white mb-4 relative z-10">
+                        <span class="material-symbols-outlined">security</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-white mb-4 relative z-10">Cybersecurity</h3>
+                    <div class="flex flex-wrap gap-2 mt-auto relative z-10">
+                        <span class="px-3 py-1.5 rounded-full bg-white/20 text-white font-label-md text-[12px] border border-white/30 backdrop-blur-sm">Linux Security</span>
+                        <span class="px-3 py-1.5 rounded-full bg-white/20 text-white font-label-md text-[12px] border border-white/30 backdrop-blur-sm">OWASP Top 10</span>
+                        <span class="px-3 py-1.5 rounded-full bg-white/20 text-white font-label-md text-[12px] border border-white/30 backdrop-blur-sm">Penetration Testing</span>
+                        <span class="px-3 py-1.5 rounded-full bg-white/20 text-white font-label-md text-[12px] border border-white/30 backdrop-blur-sm">Cryptography</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section>
+            <div class="flex items-center gap-4 mb-stack-lg">
+                <h2 class="font-headline-md text-headline-md text-on-surface">Sertifikasi & Pencapaian</h2>
+                <div class="h-px bg-outline-variant flex-grow opacity-50"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Cert 1 -->
+                <div class="bg-surface-container-lowest rounded-xl p-4 flex flex-col items-center justify-center text-center gap-3 border border-outline-variant/20 hover:border-primary/50 transition-colors cursor-pointer group">
+                    <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-tertiary group-hover:bg-primary-fixed group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-[32px]">workspace_premium</span>
+                    </div>
+                    <span class="font-label-md text-label-md text-on-surface">CompTIA Security+</span>
+                </div>
+                <!-- Cert 2 -->
+                <div class="bg-surface-container-lowest rounded-xl p-4 flex flex-col items-center justify-center text-center gap-3 border border-outline-variant/20 hover:border-primary/50 transition-colors cursor-pointer group">
+                    <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-tertiary group-hover:bg-primary-fixed group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-[32px]">shield</span>
+                    </div>
+                    <span class="font-label-md text-label-md text-on-surface">CEH Certified</span>
+                </div>
+                <!-- Cert 3 -->
+                <div class="bg-surface-container-lowest rounded-xl p-4 flex flex-col items-center justify-center text-center gap-3 border border-outline-variant/20 hover:border-primary/50 transition-colors cursor-pointer group">
+                    <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-tertiary group-hover:bg-primary-fixed group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-[32px]">school</span>
+                    </div>
+                    <span class="font-label-md text-label-md text-on-surface">AWS Certified Security</span>
+                </div>
+                <!-- Cert 4 -->
+                <div class="bg-surface-container-lowest rounded-xl p-4 flex flex-col items-center justify-center text-center gap-3 border border-outline-variant/20 hover:border-primary/50 transition-colors cursor-pointer group">
+                    <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-tertiary group-hover:bg-primary-fixed group-hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-[32px]">terminal</span>
+                    </div>
+                    <span class="font-label-md text-label-md text-on-surface">OSCP (In Progress)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-low w-full py-section-gap-mobile md:py-section-gap-desktop mt-auto border-t border-outline-variant/20">
+        <div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto gap-stack-md">
+            <div class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+                <span class="material-symbols-outlined">code_blocks</span>
+                Razy Al Farizy
+            </div>
+            <div class="flex gap-6">
+                <a class="text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-transform duration-300 font-label-md text-label-md flex items-center gap-1 opacity-80 hover:opacity-100" href="#">
+                    <span class="material-symbols-outlined text-[20px]">link</span> LinkedIn
+                </a>
+                <a class="text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-transform duration-300 font-label-md text-label-md flex items-center gap-1 opacity-80 hover:opacity-100" href="#">
+                    <span class="material-symbols-outlined text-[20px]">code</span> GitHub
+                </a>
+                <a class="text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-transform duration-300 font-label-md text-label-md flex items-center gap-1 opacity-80 hover:opacity-100" href="#">
+                    <span class="material-symbols-outlined text-[20px]">chat</span> Twitter
+                </a>
+                <a class="text-on-tertiary-fixed-variant hover:text-primary hover:translate-y-[-2px] transition-transform duration-300 font-label-md text-label-md flex items-center gap-1 opacity-80 hover:opacity-100" href="kontak.html">
+                    <span class="material-symbols-outlined text-[20px]">mail</span> Email
+                </a>
+            </div>
+            <div class="text-secondary font-label-md text-label-md opacity-70 text-center md:text-right mt-4 md:mt-0 max-w-xs">
+                © 2024 Razy Al Farizy. Dibuat dengan dedikasi pada Keamanan & Inovasi.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menuClose = document.getElementById('menuClose');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
