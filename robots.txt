@@ -1,0 +1,5 @@
+# robots.txt for Razy Al Farizy Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://zhee1112.github.io/PortofolioWeb/sitemap.xml
