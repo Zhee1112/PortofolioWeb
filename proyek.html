@@ -133,7 +133,7 @@
             </p>
         </section>
 
-        <!-- Projects Empty State -->
+        <!-- Full Stack Development Section -->
         <section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto mb-section-gap-mobile md:mb-section-gap-desktop">
             <div class="flex items-center gap-4 mb-stack-lg border-b border-surface-variant pb-4">
                 <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
@@ -141,11 +141,31 @@
                 </div>
                 <h2 class="font-headline-md text-headline-md text-on-background">Full Stack Development</h2>
             </div>
-            <div class="text-center py-12 bg-surface-container-lowest rounded-[24px] border border-surface-variant">
-                <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-tertiary mx-auto mb-4">
-                    <span class="material-symbols-outlined text-3xl">construction</span>
-                </div>
-                <p class="font-body-md text-on-surface-variant" data-id="projects_empty_fullstack" data-en="projects_empty_fullstack_en">Proyek Full Stack akan segera tersedia di sini.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+                <!-- Project Card 1 -->
+                <article class="group relative bg-surface-container-lowest rounded-[24px] overflow-hidden soft-shadow hover-lift flex flex-col transition-all duration-300 border border-surface-variant">
+                    <div class="h-[200px] overflow-hidden relative bg-surface-variant">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100" src="https://digi-kas.vercel.app/og-image.png" alt="Digi-Kas Dashboard" onerror="this.style.display='none'"/>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span>
+                            <span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Full Stack App</span>
+                        </div>
+                        <h3 class="font-headline-sm text-headline-sm text-on-background mb-stack-sm">Digi-Kas</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">
+                            Aplikasi manajemen keuangan digital modern dengan fitur pencatatan transaksi, analitik real-time, dan dashboard interaktif.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-surface text-on-surface-variant font-label-caps text-label-caps px-3 py-1 rounded-full border border-outline-variant">Next.js</span>
+                            <span class="bg-surface text-on-surface-variant font-label-caps text-label-caps px-3 py-1 rounded-full border border-outline-variant">TypeScript</span>
+                            <span class="bg-surface text-on-surface-variant font-label-caps text-label-caps px-3 py-1 rounded-full border border-outline-variant">Tailwind</span>
+                        </div>
+                        <a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-secondary hover:text-primary transition-colors" href="https://digi-kas.vercel.app/" target="_blank">
+                            Live Demo <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+                        </a>
+                    </div>
+                </article>
             </div>
         </section>
 
